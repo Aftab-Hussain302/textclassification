@@ -1,0 +1,24 @@
+metadata_version: 1
+name: A Hybrid Approach to Classifying Wikipedia Article Quality Flaws with a Feature Fusion Framework
+description: "A Hybrid Approach to Classifying Wikipedia Article Quality Flaws with a Feature Fusion Framework \nArticle quality has always been a major concern for Wikipedia. To improve article quality, it is critical to first identify defects. Thus, flaw classification has attracted considerable attention. To achieve this, several machine-learning-based approaches are available, including deep learning models based on either manually constructed or autoextracted features. However, adopting only features of either single type may not ensure a comprehensive description of articles. To improve flaw classification, we propose a feature fusion framework combining both handcrafted and autoextracted features. In this research, we first use a rule-based method from a previously proposed framework to extract handcrafted features. Additionally, we obtain autoextracted features using Bidirectional Encoder Representations from Transformers (BERT) and various deep learning models, including bidirectional long short-term memory (Bi LSTM), bidirectional gated recurrent unit (Bi GRU), bidirectional recurrent neural network (Bi RNN), and multihead self-attention models. Finally, the handcrafted features are standardized and concatenated with the autoextracted features. Then, the concatenated features are fed into a feedforward neural network for classification. A detailed comparison of different classifiers is conducted. We compare 12 different classifiers in terms of training performance, classification performance, and model training time. The experiments show that the proposed feature fusion framework can notably improve the effectiveness of quality flaw classification for Wikipedia articles. In particular, a Bi GRU model based on the proposed framework achieves excellent classification accuracy."
+tags:
+- Wikipedia
+- Deep learning
+- Fusion framework
+- Text classification
+authors:
+- name: Ping Wang
+  affiliations:
+  - name: Center for the Studies of Information Resources, Wuhan University
+- name: Muyan Li
+  affiliations:
+  - name: School of Information Management, Wuhan University
+- name: Xiaodan Li
+  affiliations:
+  - name: Google
+- name: Heshen Zhou
+  affiliations:
+  - name: School of Information Management, Wuhan University
+- name: Jingrui Hou
+  affiliations:
+  - name: School of Information Management, Wuhan University

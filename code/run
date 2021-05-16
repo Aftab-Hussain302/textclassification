@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+
+python -u evaluation/roc/evaluation_roc_curve_total.py "$@"
+python -u feature_selection/curve_model_training_acc.py "$@"
+python -u feature_selection/curve_model_training_loss.py "$@"

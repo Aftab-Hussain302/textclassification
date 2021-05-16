@@ -1,0 +1,14 @@
+# A Hybrid Approach to Classifying Wikipedia Article Quality Flaws with a Feature Fusion Framework 
+### Project Description
+Article quality has always been a major concern for Wikipedia. To improve article quality, it is critical to first identify defects. Thus, flaw classification has attracted considerable attention. To achieve this, several machine-learning-based approaches are available, including deep learning models based on either manually constructed or autoextracted features. However, adopting only features of either single type may not ensure a comprehensive description of articles. To improve flaw classification, we propose a feature fusion framework combining both handcrafted and autoextracted features. In this research, we first use a rule-based method from a previously proposed framework to extract handcrafted features. Additionally, we obtain autoextracted features using Bidirectional Encoder Representations from Transformers (BERT) and various deep learning models, including bidirectional long short-term memory (Bi LSTM), bidirectional gated recurrent unit (Bi GRU), bidirectional recurrent neural network (Bi RNN), and multihead self-attention models. Finally, the handcrafted features are standardized and concatenated with the autoextracted features. Then, the concatenated features are fed into a feedforward neural network for classification. A detailed comparison of different classifiers is conducted. We compare 12 different classifiers in terms of training performance, classification performance, and model training time. The experiments show that the proposed feature fusion framework can notably improve the effectiveness of quality flaw classification for Wikipedia articles. In particular, a Bi GRU model based on the proposed framework achieves excellent classification accuracy.
+
+### Capsule Settings
+In this capsule, we give all the code and data we used in experiment.In the environment settings, we used Python 3.6.5 in practice. However, we are not familiar with this platform and haven't find the Python version in this platform. We select the closest version of Python and packages in environment settings. 
+
+We used the basic BERT model(uncased_L-12_H-768_A-12) in content encoding.The encoded BERT data are more than 4GB, and our experiment has to run on this data for 48 times. It is hard for us to reproduce all the data in one run. So we only give the reproducible run for the visualization part, and summarized the model performance in the data. The outputs used for visualization are put in the data. If you are interested, you can check the data used for visualization images. Besides, you can use our code and run some of our models to check the procedure.
+
+Furthermore, we will gradually improve our reproducible code in the future.
+
+If there is any question with the codes, please contact us.
+
+Thanks.
